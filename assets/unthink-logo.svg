@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-label="UnThink logo">
+  <defs>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9ED0FF"/>
+      <stop offset="100%" stop-color="#79B8F0"/>
+    </radialGradient>
+    <style>
+      .ring { fill: none; stroke: #5B667F; stroke-width: 8; stroke-linecap: round; }
+      .trace { fill: none; stroke: #6CA9D6; stroke-width: 6; stroke-linecap: round; opacity: 0.55; }
+      .title { font: 900 120px 'Segoe UI', Arial, sans-serif; letter-spacing: 6px; }
+      .tag { font: 700 54px 'Segoe UI', Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="1200" fill="#E8E8E8"/>
+
+  <circle cx="600" cy="600" r="320" fill="url(#core)"/>
+  <circle cx="600" cy="600" r="330" class="ring" opacity="0.65"/>
+  <circle cx="600" cy="600" r="382" class="ring"/>
+  <circle cx="600" cy="600" r="410" class="ring" opacity="0.5" stroke-dasharray="90 24"/>
+
+  <path d="M600 365v470M560 385v430M640 385v430M520 425v350M680 425v350" class="trace"/>
+  <path d="M600 470H400M600 530H340M600 590H300M600 650H340M600 710H400" class="trace"/>
+  <path d="M600 470H800M600 530H860M600 590H900M600 650H860M600 710H800" class="trace"/>
+
+  <rect x="250" y="540" width="700" height="185" rx="26" fill="#02050D" stroke="#6D7FA3" stroke-width="8"/>
+  <text x="600" y="668" text-anchor="middle" class="title" fill="#FFFFFF">UNTHINK</text>
+
+  <text x="600" y="790" text-anchor="middle" class="tag" fill="#02050D">IDEAS IGNITE,</text>
+  <text x="600" y="852" text-anchor="middle" class="tag" fill="#02050D">INNOVATION THRIVES</text>
+</svg>
