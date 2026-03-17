@@ -232,11 +232,7 @@ if (menuBtn && mobileNav) {
   });
 }
 
-<<<<<<< HEAD
 const countdownDate = new Date('2026-03-31T23:59:59+05:30').getTime();
-=======
-const countdownDate = new Date('2026-03-30T23:59:59+05:30').getTime();
->>>>>>> b4456823cd5cab1dcf77284b25831d91f29836e6
 const daysEl = document.getElementById('days');
 const hoursEl = document.getElementById('hours');
 const minutesEl = document.getElementById('minutes');
@@ -567,7 +563,6 @@ if (adminStats) {
     });
   }
 
-<<<<<<< HEAD
   function initRegisterScrollEffects() {
     const registerSection = document.querySelector('#register');
     if (!registerSection) return;
@@ -646,9 +641,6 @@ if (adminStats) {
       );
     }
   }
-
-=======
->>>>>>> b4456823cd5cab1dcf77284b25831d91f29836e6
   function initHeroParallax() {
     const hero = document.querySelector('.hero-shell');
     if (!hero) return;
@@ -777,10 +769,7 @@ if (adminStats) {
     initSectionReveal();
     initGenericReveal();
     initTimelineAnimation();
-<<<<<<< HEAD
     initRegisterScrollEffects();
-=======
->>>>>>> b4456823cd5cab1dcf77284b25831d91f29836e6
     initHeroParallax();
     initHeroParticles();
     ScrollTrigger.refresh();
