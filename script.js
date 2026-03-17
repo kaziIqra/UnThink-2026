@@ -232,7 +232,11 @@ if (menuBtn && mobileNav) {
   });
 }
 
+<<<<<<< HEAD
+const countdownDate = new Date('2026-03-31T23:59:59+05:30').getTime();
+=======
 const countdownDate = new Date('2026-03-30T23:59:59+05:30').getTime();
+>>>>>>> b4456823cd5cab1dcf77284b25831d91f29836e6
 const daysEl = document.getElementById('days');
 const hoursEl = document.getElementById('hours');
 const minutesEl = document.getElementById('minutes');
@@ -563,6 +567,88 @@ if (adminStats) {
     });
   }
 
+<<<<<<< HEAD
+  function initRegisterScrollEffects() {
+    const registerSection = document.querySelector('#register');
+    if (!registerSection) return;
+
+    const registerPanel = registerSection.querySelector('.register-panel');
+    const registerLayout = registerSection.querySelector('.register-layout');
+    const titleKicker = registerSection.querySelector('.title-kicker');
+    const title = registerSection.querySelector('.section-title');
+    const subtext = registerSection.querySelector('.register-subtext');
+    const actionCard = registerSection.querySelector('.register-action-card');
+
+    if (registerPanel) {
+      gsap.fromTo(
+        registerPanel,
+        { y: 42, scale: 0.97, transformOrigin: '50% 50%' },
+        {
+          y: 0,
+          scale: 1,
+          duration: 0.95,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: registerPanel,
+            start: 'top 84%',
+            toggleActions: 'play none none reverse'
+          }
+        }
+      );
+    }
+
+    if (registerLayout) {
+      gsap.to(registerLayout, {
+        yPercent: -5,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: registerSection,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: 0.8
+        }
+      });
+    }
+
+    const textTargets = [titleKicker, title, subtext].filter(Boolean);
+    if (textTargets.length) {
+      gsap.fromTo(
+        textTargets,
+        { y: 22 },
+        {
+          y: 0,
+          duration: 0.72,
+          stagger: 0.08,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: registerSection,
+            start: 'top 82%',
+            toggleActions: 'play none none reverse'
+          }
+        }
+      );
+    }
+
+    if (actionCard) {
+      gsap.fromTo(
+        actionCard,
+        { y: 18 },
+        {
+          y: 0,
+          duration: 0.65,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: actionCard,
+            start: 'top 88%',
+            toggleActions: 'play none none reverse'
+          }
+        }
+      );
+    }
+  }
+
+=======
+>>>>>>> b4456823cd5cab1dcf77284b25831d91f29836e6
   function initHeroParallax() {
     const hero = document.querySelector('.hero-shell');
     if (!hero) return;
@@ -691,6 +777,10 @@ if (adminStats) {
     initSectionReveal();
     initGenericReveal();
     initTimelineAnimation();
+<<<<<<< HEAD
+    initRegisterScrollEffects();
+=======
+>>>>>>> b4456823cd5cab1dcf77284b25831d91f29836e6
     initHeroParallax();
     initHeroParticles();
     ScrollTrigger.refresh();
