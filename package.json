@@ -5,8 +5,8 @@
   "main": "script.js",
   "scripts": {
     "build": "npm run build:css && node ./scripts/build.js",
-    "build:css": "tailwindcss -i ./src/input.css -o ./assets/styles.css --minify",
-    "watch:css": "tailwindcss -i ./src/input.css -o ./assets/styles.css --watch"
+    "build:css": "node ./node_modules/tailwindcss/lib/cli.js -i ./src/input.css -o ./assets/styles.css --minify",
+    "watch:css": "node ./node_modules/tailwindcss/lib/cli.js -i ./src/input.css -o ./assets/styles.css --watch"
   },
   "keywords": [],
   "author": "",
