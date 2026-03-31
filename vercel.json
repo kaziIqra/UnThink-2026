@@ -1,0 +1,4 @@
+{
+  "buildCommand": "node ./node_modules/tailwindcss/lib/cli.js -i ./src/input.css -o ./assets/styles.css --minify && node ./scripts/build.js",
+  "outputDirectory": "dist"
+}
