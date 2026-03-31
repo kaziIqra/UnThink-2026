@@ -232,7 +232,7 @@ if (menuBtn && mobileNav) {
   });
 }
 
-const countdownDate = new Date('2026-03-31T23:59:59+05:30').getTime();
+const countdownDate = new Date('2026-04-02T23:59:59+05:30').getTime();
 const daysEl = document.getElementById('days');
 const hoursEl = document.getElementById('hours');
 const minutesEl = document.getElementById('minutes');
